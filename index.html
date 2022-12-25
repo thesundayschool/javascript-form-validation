@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt form validation - Sunday School</title>
+    <link rel='stylesheet' href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+<section>
+        <div class="form_heading">Create your account</div>
+
+        <form name="register" class="form" onsubmit="event.preventDefault(); return validateForm()">
+            <div class="form_control">
+                <input type="text" name="fullname" placeholder="fullname" id="fullname" class="form_input">
+                <label for="fullname" class="form_label">Full name</label>
+            </div>
+
+            <div class="form_control">
+                <input type="number" name="phone" placeholder="phone" id="phone" class="form_input">
+                <label for="phone" class="form_label">Phone</label>
+            </div>
+
+            <div class="form_control">
+                <input type="text" name="email" placeholder="email" id="email" class="form_input">
+                <label for="email" class="form_label">Email</label>
+            </div>
+            
+            <div class="error_message"></div>
+            <div class="success_message"></div>
+            
+            <div class="form_control">
+                <button type="submit" class="btn_submit">Create New Account</button>
+            </div>
+        </form>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
